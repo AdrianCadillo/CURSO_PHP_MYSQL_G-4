@@ -1,0 +1,16 @@
+[24-Nov-2023 02:04:18 UTC] PHP Fatal error:  Uncaught Error: Class "Humano" not found in C:\laragon\www\cursophp\tipos_de_errores.php:20
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\cursophp\tipos_de_errores.php on line 20
+[24-Nov-2023 02:28:33 UTC] PHP Fatal error:  Uncaught Error: Class "Humano" not found in C:\laragon\www\cursophp\tipos_de_errores.php:20
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\cursophp\tipos_de_errores.php on line 20
+[24-Nov-2023 02:28:33 UTC] PHP Fatal error:  Uncaught Error: Class "Humano" not found in C:\laragon\www\cursophp\tipos_de_errores.php:20
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\cursophp\tipos_de_errores.php on line 20
+[24-Nov-2023 02:28:34 UTC] PHP Fatal error:  Uncaught Error: Class "Humano" not found in C:\laragon\www\cursophp\tipos_de_errores.php:20
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\cursophp\tipos_de_errores.php on line 20

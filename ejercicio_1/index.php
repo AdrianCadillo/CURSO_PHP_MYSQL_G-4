@@ -21,11 +21,13 @@ session_start();
 
             <form action="" method="post">
             <div class="card-body">
+                <h4>
                 <?php 
-                  echo isset($_SESSION['suma_pies']) ? $_SESSION['suma_pies']:'';
+                  echo isset($_SESSION['response']) ? $_SESSION['response']:'';
                   
-                  unset($_SESSION['suma_pies']);
+                  unset($_SESSION['response']);
                 ?>
+                </h4>
                 <div class="form-group">
                     <label for="pies">Cantidad pies (*)</label>
                     <input type="text" class="form-control" name="pies" id="pies">
@@ -64,10 +66,23 @@ session_start();
 
     $PiesAMillas = $PiesAMetros / 1609;
 
-    $SumaTotal = $PiesAPulgadas + $PiesAYardias + $PiesAMetros + $PiesAMillas;
 
-    $_SESSION['suma_pies'] = $SumaTotal;
-    header("location:index.php");
+    /// metros a pulgadas
+    $MetrosAPulgadas = $CantidadMetros/0.0254;
+
+    $MetrosAYardas = ($MetrosAPulgadas/12)/3;
+
+    $SumaTotalPulgadas = $PiesAPulgadas +  $MetrosAPulgadas;
+
+    $SumaTotalYardas = $PiesAYardias + $MetrosAYardas;
+
+    /// de metros a yardas . +
+
+    $Resultado = "CANTIDAD DE PULGADAS : ".number_format($SumaTotalPulgadas,2,","," ").
+                 "<br>CANTIDAD DE YARDAS : ".number_format($SumaTotalYardas,2,","," ");
+  
+    $_SESSION['response'] = $Resultado;
+    header("location:./");
    } 
   ?>  
 </body>

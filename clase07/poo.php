@@ -29,7 +29,12 @@ class Persona { /// Plantilla
     }
 }
 
-$humano = new Persona("0977722","Armas Pajuelo","Julia Luisa","PERU-LIMA");
+ //$humano = new Persona("0977722","Armas Pajuelo","Julia Luisa","PERU-LIMA");
  
-$humano->ReportePersona();
+ //$humano->ReportePersona();
+ 
 
+
+ 
+
+ 
